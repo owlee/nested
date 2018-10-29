@@ -194,6 +194,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionview
+  activerecord
   coffee-rails
   faker
   httparty

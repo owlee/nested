@@ -7,6 +7,8 @@ NON_PROD_ENVIRONMENTS = (ENVIRONMENTS - ['production']).freeze
 # Global Gems      #
 ####################
 group(*ENVIRONMENTS) do
+  gem "actionview"
+  gem "activerecord"
   gem 'coffee-rails'
   gem 'httparty'
   gem 'jbuilder'
