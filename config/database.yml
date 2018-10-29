@@ -1,4 +1,4 @@
-defaults: &defaults
+default: &default
   adapter: postgresql
   database: <%= ENV["PROD_DB_NAME"] || 'owls_nest' %>
   encoding: unicode
@@ -10,6 +10,7 @@ defaults: &defaults
 
 development:
   <<: *default
+  database: <%= ENV["PROD_DB_NAME"] || 'nested_development' %>
 
 production:
   <<: *default
